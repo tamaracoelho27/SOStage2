@@ -1,0 +1,100 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .signup-left-panel {
+    padding: 15px;
+  }
+
+  .signup-content {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+/* Tablet - Medium screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .signup-left-panel {
+    padding: 30px;
+  }
+
+  .signup-content {
+    max-width: 450px;
+    padding: 20px;
+  }
+}
+
+/* Desktop - Large screens */
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
+
+  .signup-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .signup-left-panel {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px 0 0 12px;
+    box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgb(229, 228, 227);
+    padding: 40px 20px;
+  }
+
+  .signup-content {
+    padding: 40px;
+    max-width: 100%;
+  }
+}
