@@ -1,0 +1,234 @@
+
+.signup-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/runner.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-left-panel {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: white;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.signup-content {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    overflow: visible;
+    padding: 20px;
+}
+
+.signup-logo {
+    width: 100%;
+    text-align: center;
+    color: rgb(82, 82, 82);
+    font-size: clamp(32px, 8vw, 48px);
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 30px;
+}
+
+.signup-header {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.signup-title {
+    text-align: center;
+    color: black;
+    font-size: clamp(20px, 6vw, 24px);
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+}
+
+.signup-subtitle {
+    text-align: center;
+    color: black;
+    font-size: clamp(14px, 4vw, 16px);
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+
+.signup-label {
+    position: static;
+    display: block;
+    text-align: left;
+    color: black;
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.signup-input, .signup-email-input {
+    position: static;
+    width: 100%;
+    height: 48px;
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 0 12px;
+    margin-bottom: 15px;
+}
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.remember-me-left {
+    display: flex;
+    align-items: center;
+}
+
+.signup-input-remember {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(115, 115, 115);
+    flex-shrink: 0;
+}
+
+.remember-me-label {
+    color: black;
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    margin: 0;
+}
+
+.forgot-password {
+    color: #7ea638;
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.signup-input-password {
+    margin-bottom: 15px;
+}
+
+.signup-email-input {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    margin-bottom: 15px;
+    position: static;
+}
+
+.email-icon {
+    width: 20px;
+    height: 16px;
+    background-image: url('../images/email.png');
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.email-text {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: clamp(14px, 3vw, 16px);
+    color: rgb(115, 115, 115);
+    background: transparent;
+}
+
+.signup-button {
+    position: static;
+    width: 100%;
+    height: 48px;
+    background-color: #bef264;
+    border: 1px solid rgb(87, 83, 76);
+    border-radius: 12px;
+    color: white;
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #a8e030;
+}
+
+.signup-button:active {
+    transform: scale(0.98);
+}
+
+.signup-footer {
+    position: static;
+    text-align: center;
+    font-size: clamp(14px, 3vw, 16px);
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+}
+
+.signup-footer span {
+    color: black;
+    font-weight: 300;
+}
+a{
+    text-decoration:none;
+    color: #749737;
+}
+.signup-link {
+    color: #bef264;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration:none;
+}
+.signup-link::after{
+    text-decoration:none;
+    color: #bef264;
+}
+/* Responsive Name Fields Container */
+.signup-names-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+}
+
+.signup-name-field {
+    width: 100%;
+}
+
+/* Desktop: Display names side-by-side */
+@media screen and (min-width: 481px) {
+    .signup-names-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
